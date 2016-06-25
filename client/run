@@ -1,0 +1,4 @@
+#!/bin/bash
+
+lua5.3 client.lua szren qwe123
+

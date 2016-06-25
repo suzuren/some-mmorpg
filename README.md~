@@ -3,7 +3,6 @@
 学习[skynet](https://github.com/cloudwu/skynet)时撸出来的简单服务器，欢迎吐槽。
 [lua-cjson](https://github.com/cloudwu/lua-cjson)
 [some-mmorpg](https://github.com/jintiao/some-mmorpg)
-
 完成度很低，已实现功能有：
 * 登陆
 * 角色创建

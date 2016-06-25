@@ -1,0 +1,102 @@
+run 
+*1.
+--mmorpg\server\service\main.lua
+
+skynet.start(function()
+local loginserver = skynet.newservice ("loginserver")
+skynet.call (loginserver, "lua", "open", login_config)
+
+	--mmorpg\server\service\loginserver.lua
+
+	function CMD.open (conf)
+	local s = skynet.newservice ("loginslave")
+	skynet.call (s, "lua", "init", skynet.self (), i, conf)
+	--skynet.call (s, "lua", "auth", fd, addr)
+
+		--mmorpg\server\service\loginslave.lua
+
+		function CMD.init (m, id, conf)
+
+local gamed = skynet.newservice ("gamed", loginserver)
+skynet.call (gamed, "lua", "open", game_config)
+
+
+mmorpg\server\service\gamed.lua
+
+function gamed.open (config)
+table.insert (pool, skynet.newservice ("agent", self))
+skynet.uniqueservice ("gdd")
+skynet.uniqueservice ("world")
+
+
+	mmorpg\server\service\world.lua
+
+	skynet.start (function ()	
+	local s = skynet.newservice ("map", self)
+	skynet.call (s, "lua", "init", conf)
+
+			mmorpg\server\service\map.lua
+			
+			function CMD.init (w, c)
+
+
+
+*2.
+client:	fd = assert (socket.connect (server, login_port))
+server:	local sock = socket.listen (host, port)			-- loginserver.lua
+	local balance = 1
+	socket.start (sock, function (fd, addr)
+		local s = slave[balance]
+		balance = balance + 1
+		if balance > nslave then balance = 1 end
+
+		skynet.call (s, "lua", "auth", fd, addr)	-- 在这里，把这个 socket 的操作权转让给loginslave服务去处理
+	end)
+	in loginslave.lua auth func -> socket.start(id) is start read data
+
+	read_msg 1:	REQUEST	handshake	table: 0x7f96f9ee2580	function: 0x7f96f9f545c0
+
+	enter the -> if name == "handshake"
+	after enter the dir(lualib\db\account.lua) load func return account{account,salt,verifier}
+	after server send data first client -> data:
+				response {
+					user_exists = (account.id ~= nil),
+					salt = account.salt,
+					server_pub = pkey,
+					challenge = challenge,
+				}
+	and client first recv data are -> data:args{+challenge,+user_exists,+salt,+server_pub}
+client:
+	in handle_response (id, args) func ,s table is s->{+args{+client_pub,+name},+name [handshake]}
+	so local f = RESPONSE[s.name], is handshake func,
+	in handshake function client send data -> send_request ("auth", ret)
+
+server:
+	read_msg 2:	REQUEST	auth	table: 0x7f96fe773780	function: 0x7f96fe751c70
+	and server check account.id, if id is nil then create account.id
+	and server save account data --local session = skynet.call (master, "lua", "save_session", id, session_key, challenge) 
+		and master node is skynet.seft() node -> in loginserver.lua CMD.open() fun,skynet.self () is loginserver self service
+		it is code -> skynet.call (s, "lua", "init", skynet.self (), i, conf)
+		so loginsalve.lua auth func -> loginserver.lua save_session func .
+		and after loginserver.lua save_session func -> loginslave.lua save_session func .
+		because in loginserver.lua save_session func code --skynet.call (s, "lua", "save_session", session, account, key, challenge)
+		so in loginsalve.lua --CMD.save_session (session, account, key, challenge),it is save session
+	after then
+	server two send to data client -- send_msg (fd, msg) ,msg={session,expire,challenge}
+client:
+	client recv data ->args{+expire [1800],+challenge [***]+session [1]}
+	s table is s->{+args{+challenge},+name [auth]}
+	so local f = RESPONSE[s.name], is auth func,
+	in auth func send to data server 
+	send_request ("challenge", { session = args.session, challenge = challenge })
+
+
+
+
+
+
+
+
+
+
+

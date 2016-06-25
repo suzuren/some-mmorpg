@@ -1,0 +1,247 @@
+13054:M 11 Apr 12:00:53.206 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6388
+ |    `-._   `._    /     _.-'    |     PID: 13054
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+13054:M 11 Apr 12:00:53.207 # Server started, Redis version 3.0.3
+13054:M 11 Apr 12:00:53.207 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+13054:M 11 Apr 12:00:53.207 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+13054:M 11 Apr 12:00:53.207 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+13054:M 11 Apr 12:00:53.208 * The server is now ready to accept connections on port 6388
+13054:signal-handler (1460393642) Received SIGTERM scheduling shutdown...
+13054:M 11 Apr 12:54:02.215 # User requested shutdown...
+13054:M 11 Apr 12:54:02.216 * Saving the final RDB snapshot before exiting.
+13054:M 11 Apr 12:54:02.513 * DB saved on disk
+13054:M 11 Apr 12:54:02.513 * Removing the pid file.
+13054:M 11 Apr 12:54:02.513 # Redis is now ready to exit, bye bye...
+9424:M 17 Apr 06:46:22.607 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6388
+ |    `-._   `._    /     _.-'    |     PID: 9424
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+9424:M 17 Apr 06:46:22.609 # Server started, Redis version 3.0.3
+9424:M 17 Apr 06:46:22.609 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+9424:M 17 Apr 06:46:22.609 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+9424:M 17 Apr 06:46:22.609 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+9424:M 17 Apr 06:46:22.611 * DB loaded from disk: 0.002 seconds
+9424:M 17 Apr 06:46:22.611 * The server is now ready to accept connections on port 6388
+9424:signal-handler (1460913133) Received SIGTERM scheduling shutdown...
+9424:M 17 Apr 13:12:13.654 # User requested shutdown...
+9424:M 17 Apr 13:12:13.654 * Saving the final RDB snapshot before exiting.
+9424:M 17 Apr 13:12:14.202 * DB saved on disk
+9424:M 17 Apr 13:12:14.202 * Removing the pid file.
+9424:M 17 Apr 13:12:14.202 # Redis is now ready to exit, bye bye...
+9021:M 18 Apr 08:54:00.906 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6388
+ |    `-._   `._    /     _.-'    |     PID: 9021
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+9021:M 18 Apr 08:54:00.914 # Server started, Redis version 3.0.3
+9021:M 18 Apr 08:54:00.914 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+9021:M 18 Apr 08:54:00.915 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+9021:M 18 Apr 08:54:00.915 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+9021:M 18 Apr 08:54:00.963 * DB loaded from disk: 0.048 seconds
+9021:M 18 Apr 08:54:00.963 * The server is now ready to accept connections on port 6388
+9021:signal-handler (1460986951) Received SIGTERM scheduling shutdown...
+9021:M 18 Apr 09:42:31.443 # User requested shutdown...
+9021:M 18 Apr 09:42:31.443 * Saving the final RDB snapshot before exiting.
+9021:M 18 Apr 09:42:31.465 * DB saved on disk
+9021:M 18 Apr 09:42:31.478 * Removing the pid file.
+9021:M 18 Apr 09:42:31.478 # Redis is now ready to exit, bye bye...
+9006:M 19 Apr 09:48:28.007 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6388
+ |    `-._   `._    /     _.-'    |     PID: 9006
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+9006:M 19 Apr 09:48:28.009 # Server started, Redis version 3.0.3
+9006:M 19 Apr 09:48:28.009 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+9006:M 19 Apr 09:48:28.009 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+9006:M 19 Apr 09:48:28.009 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+9006:M 19 Apr 09:48:28.014 * DB loaded from disk: 0.005 seconds
+9006:M 19 Apr 09:48:28.014 * The server is now ready to accept connections on port 6388
+9006:signal-handler (1461085193) Received SIGTERM scheduling shutdown...
+9006:M 19 Apr 12:59:53.559 # User requested shutdown...
+9006:M 19 Apr 12:59:53.561 * Saving the final RDB snapshot before exiting.
+9006:M 19 Apr 12:59:53.604 * DB saved on disk
+9006:M 19 Apr 12:59:53.604 * Removing the pid file.
+9006:M 19 Apr 12:59:53.604 # Redis is now ready to exit, bye bye...
+13409:M 22 Jun 13:06:53.527 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6388
+ |    `-._   `._    /     _.-'    |     PID: 13409
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+13409:M 22 Jun 13:06:53.528 # Server started, Redis version 3.0.3
+13409:M 22 Jun 13:06:53.528 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+13409:M 22 Jun 13:06:53.529 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+13409:M 22 Jun 13:06:53.529 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+13409:M 22 Jun 13:06:53.530 * DB loaded from disk: 0.001 seconds
+13409:M 22 Jun 13:06:53.530 * The server is now ready to accept connections on port 6388
+13409:signal-handler (1466618721) Received SIGTERM scheduling shutdown...
+13409:M 22 Jun 14:05:21.168 # User requested shutdown...
+13409:M 22 Jun 14:05:21.294 * Saving the final RDB snapshot before exiting.
+13409:M 22 Jun 14:05:21.576 * DB saved on disk
+13409:M 22 Jun 14:05:21.576 * Removing the pid file.
+13409:M 22 Jun 14:05:21.576 # Redis is now ready to exit, bye bye...
+9200:M 23 Jun 10:10:40.535 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6388
+ |    `-._   `._    /     _.-'    |     PID: 9200
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+9200:M 23 Jun 10:10:40.536 # Server started, Redis version 3.0.3
+9200:M 23 Jun 10:10:40.536 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+9200:M 23 Jun 10:10:40.536 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+9200:M 23 Jun 10:10:40.536 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+9200:M 23 Jun 10:10:40.549 * DB loaded from disk: 0.012 seconds
+9200:M 23 Jun 10:10:40.549 * The server is now ready to accept connections on port 6388
+9200:signal-handler (1466699294) Received SIGTERM scheduling shutdown...
+9200:M 23 Jun 12:28:14.879 # User requested shutdown...
+9200:M 23 Jun 12:28:14.880 * Saving the final RDB snapshot before exiting.
+9200:M 23 Jun 12:28:14.927 * DB saved on disk
+9200:M 23 Jun 12:28:14.927 * Removing the pid file.
+9200:M 23 Jun 12:28:14.927 # Redis is now ready to exit, bye bye...
+10054:M 24 Jun 10:19:57.766 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6388
+ |    `-._   `._    /     _.-'    |     PID: 10054
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+10054:M 24 Jun 10:19:57.767 # Server started, Redis version 3.0.3
+10054:M 24 Jun 10:19:57.767 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+10054:M 24 Jun 10:19:57.767 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10054:M 24 Jun 10:19:57.767 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+10054:M 24 Jun 10:19:57.768 * DB loaded from disk: 0.001 seconds
+10054:M 24 Jun 10:19:57.768 * The server is now ready to accept connections on port 6388
+10054:signal-handler (1466799170) Received SIGTERM scheduling shutdown...
+10054:M 24 Jun 16:12:50.715 # User requested shutdown...
+10054:M 24 Jun 16:12:50.715 * Saving the final RDB snapshot before exiting.
+10054:M 24 Jun 16:12:50.771 * DB saved on disk
+10054:M 24 Jun 16:12:50.771 * Removing the pid file.
+10054:M 24 Jun 16:12:50.771 # Redis is now ready to exit, bye bye...
+9179:M 25 Jun 02:09:47.425 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.3 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6388
+ |    `-._   `._    /     _.-'    |     PID: 9179
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+9179:M 25 Jun 02:09:47.428 # Server started, Redis version 3.0.3
+9179:M 25 Jun 02:09:47.428 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+9179:M 25 Jun 02:09:47.428 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+9179:M 25 Jun 02:09:47.428 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+9179:M 25 Jun 02:09:47.430 * DB loaded from disk: 0.001 seconds
+9179:M 25 Jun 02:09:47.430 * The server is now ready to accept connections on port 6388
+9179:signal-handler (1466857135) Received SIGTERM scheduling shutdown...
+9179:M 25 Jun 08:18:55.632 # User requested shutdown...
+9179:M 25 Jun 08:18:55.639 * Saving the final RDB snapshot before exiting.
+9179:M 25 Jun 08:18:55.656 * DB saved on disk
+9179:M 25 Jun 08:18:55.656 * Removing the pid file.
+9179:M 25 Jun 08:18:55.656 # Redis is now ready to exit, bye bye...
