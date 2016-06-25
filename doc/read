@@ -94,6 +94,31 @@ client:
 
 
 
+一个常见的client命令流程是这样的：
+
+```lua
+cd client
+./run
+character_create character = { name = 'hello', race = 'human', class = 'warrior' }
+character_list
+character_pick id = 3150110417125114881
+map_ready
+move pos = { x = 123, z = 321 }
+combat target = 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

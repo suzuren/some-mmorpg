@@ -243,17 +243,14 @@ local function handle_cmd (line)
 	local t = {}
 	local f, err = load (p, "=(load)" , "t", t)
 
-	--print("t=",t,"f=",f,"err=",err,"p=",p)
-	--print("--------------------------------------------------t")
-	--print_r (t)
-	--print("--------------------------------------------------END")
-
 	if not f then error (err) end
 	f ()
 
 	print ("cmd", cmd)
 	if t then
+		print("--t--------------------------------------------------")
 		print_r (t)
+		print("--------------------------------------------------END")
 	else
 		print ("null argument")
 	end

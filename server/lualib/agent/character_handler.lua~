@@ -6,6 +6,7 @@ local dbpacker = require "db.packer"
 local handler = require "agent.handler"
 local uuid = require "uuid"
 
+local print_r = require "utils.print_r"
 
 local REQUEST = {}
 handler = handler.new (REQUEST)
@@ -22,17 +23,24 @@ end)
 
 local function load_list (account)
 	local list = skynet.call (database, "lua", "character", "list", account)
+	print ("-- character_handler.lua load_list fun 1:", list)
 	if list then
 		list = dbpacker.unpack (list)
 	else
 		list = {}
 	end
+	print ("-- character_handler.lua load_list fun 2:", list)
 	return list
 end
 
 local function check_character (account, id)
-	print ("check_character", account, id)
+	print ("-- character_handler.lua check_character fun:", account, id)
 	local list = load_list (account)
+	if list then
+		print("--list--------------------------------------------------")
+		print_r(list)
+		print("--------------------------------------------------------")
+	end
 	for _, v in pairs (list) do
 		print ("list", v)
 		if v == id then return true end
@@ -42,10 +50,17 @@ end
 
 function REQUEST.character_list ()
 	local list = load_list (user.account)
+	--print ("-- character_handler.lua character_list fun:", list)
+	if list then
+		print("--list--------------------------------------------------")
+		print_r(list)
+		print("--------------------------------------------------------")
+	end
 	local character = {}
 	for _, id in pairs (list) do
 		local c = skynet.call (database, "lua", "character", "load", id)
 		if c then
+			print ("-- character_handler.lua character_list fun:", c)
 			character[id] = dbpacker.unpack (c)
 		end
 	end
@@ -79,14 +94,30 @@ local function create (name, race, class)
 end
 
 function REQUEST.character_create (args)
+	if args then
+		print("--args--------------------------------------------------")
+		print_r(args)
+		print("--------------------------------------------------------")
+	end
 	for k, v in pairs (args) do print (k, v) end
 	local c = args.character or error ("invalid argument")
 
 	local character = create (c.name, c.race, c.class)
+
+	if character then
+		print("--character--------------------------------------------------")
+		print_r(character)
+		print("--------------------------------------------------------")
+	end
+
 	local id = skynet.call (database, "lua", "character", "reserve", uuid.gen (), c.name)
+	print("--character_handler.lua character_create:",id)
 	if not id then return {} end
 
 	character.id = id
+
+
+
 	local json = dbpacker.pack (character)
 	skynet.call (database, "lua", "character", "save", id, json)
 
@@ -100,7 +131,8 @@ end
 
 function REQUEST.character_pick (args)
 	local id = args.id or error ()
-	assert (check_character (user.account, id))
+	print("--character_handler.lua character_pick:",user.account,id)
+	--assert (check_character (user.account, id))
 
 	local c = skynet.call (database, "lua", "character", "load", id) or error ()
 	local character = dbpacker.unpack (c)
@@ -160,6 +192,12 @@ function handler.init (character)
 	if not health or health > attribute.health_max then
 		attribute.health = attribute.health_max
 	end
+
+if handler then
+print("--handler-----------------------------------------------")
+print_r(handler)
+print("--------------------------------------------------------")
+end
 end
 
 function handler.save (character)

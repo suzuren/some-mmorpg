@@ -118,7 +118,7 @@ end
 local RESPONSE = {}
 
 function RESPONSE:handshake (args)
-	print ("-- RESPONSE.handshake func")
+	print ("-- RESPONSE.handshake func",args)
 	local name = self.name
 	assert (name == user.name)
 
@@ -253,7 +253,9 @@ local function handle_cmd (line)
 
 	print ("cmd", cmd)
 	if t then
+		print("--t--------------------------------------------------")
 		print_r (t)
+		print("--------------------------------------------------END")
 	else
 		print ("null argument")
 	end

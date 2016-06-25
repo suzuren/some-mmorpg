@@ -11,11 +11,12 @@ local aoi_handler = require "agent.aoi_handler"
 local move_handler = require "agent.move_handler"
 local combat_handler = require "agent.combat_handler"
 
+local print_r = require "utils.print_r"
 
 local gamed = tonumber (...)
 local database
 
-local print_r = require "utils.print_r"
+
 
 local host, proto_request = protoloader.load (protoloader.GAME)
 
