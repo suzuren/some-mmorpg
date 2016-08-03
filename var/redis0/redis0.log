@@ -16,3 +16,5 @@
 9145:M 25 Jun 02:09:47.334 # Creating Server TCP listening socket 127.0.0.1:6379: bind: Address already in use
 9511:M 25 Jun 11:32:34.481 * Increased maximum number of open files to 10032 (it was originally set to 1024).
 9511:M 25 Jun 11:32:34.482 # Creating Server TCP listening socket 127.0.0.1:6379: bind: Address already in use
+12921:M 03 Aug 15:22:49.413 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+12921:M 03 Aug 15:22:49.413 # Creating Server TCP listening socket 127.0.0.1:6379: bind: Address already in use
